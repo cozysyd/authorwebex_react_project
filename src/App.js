@@ -1,34 +1,72 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import * as React from 'react';
 
-function BasicExample() {
+const header = 'WebsiteName';
+
+const list = [
+  {
+    title: 'Home',
+    url: '/',
+    author: 'me',
+    num_comments: 0,
+    points: 4,
+    objectID: 0,
+  },
+  {
+    title: 'Page 1',
+    url: '/page1',
+    author: 'me',
+    num_comments: 0,
+    points: 4,
+    objectID: 1,
+  },
+  {
+    title: 'Page 2',
+    url: '/page2',
+    author: 'me',
+    num_comments: 0,
+    points: 4,
+    objectID: 2,
+  },
+  {
+    title: 'Page 3',
+    url: '/page3',
+    author: 'me',
+    num_comments: 0,
+    points: 4,
+    objectID: 3,
+  }
+];
+
+function App() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className={"navbar navbar-default"}>
+      <div className={"container-fluid"}>
+        <div className={"navbar-header"}>
+          <a className={"navbar-brand"} href={"/"}>{header}</a>
+        </div>
+        
+        <Navbar />
+      
+      </div>
+    </nav>
+
   );
 }
 
-export default BasicExample;
+function Navbar() {
+  return (
+    <ul className={"nav navbar-nav"}>
+      {list.map(function(item) {
+        return (
+          <li key={item.objectID} className={"active"}>
+            <span>
+              <a href={item.url}>{item.title}</a>
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+export default App;
