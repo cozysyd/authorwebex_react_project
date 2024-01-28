@@ -1,73 +1,36 @@
 import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-bootstrap/Carousel';
+import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
-const header = 'WebsiteName';
-
-const list = [
-  {
-    title: 'Home',
-    url: '/',
-    author: 'me',
-    num_comments: 0,
-    points: 4,
-    objectID: 0,
-  },
-  {
-    title: 'Page 1',
-    url: '/page1',
-    author: 'me',
-    num_comments: 0,
-    points: 4,
-    objectID: 1,
-  },
-  {
-    title: 'Page 2',
-    url: '/page2',
-    author: 'me',
-    num_comments: 0,
-    points: 4,
-    objectID: 2,
-  },
-  {
-    title: 'Page 3',
-    url: '/page3',
-    author: 'me',
-    num_comments: 0,
-    points: 4,
-    objectID: 3,
-  }
-];
-
-function App() {
+function UncontrolledExample() {
   return (
-    <nav className={"navbar navbar-default"}>
-      <div className={"container-fluid"}>
-        <div className={"navbar-header"}>
-          <a className={"navbar-brand"} href={"/"}>{header}</a>
-        </div>
-        
-        <Navbar />
-      
-      </div>
-    </nav>
-
+    <Carousel>
+      <Carousel.Item>
+        <ExampleCarouselImage text="First slide" />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Second slide" />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Third slide" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 }
 
-function Navbar() {
-  return (
-    <ul className={"nav navbar-nav"}>
-      {list.map(function(item) {
-        return (
-          <li key={item.objectID} className={"active"}>
-            <span>
-              <a href={item.url}>{item.title}</a>
-            </span>
-          </li>
-        );
-      })}
-    </ul>
-  );
-}
-
-export default App;
+export default UncontrolledExample;
