@@ -2,7 +2,7 @@ import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Accordion from 'react-bootstrap/Accordion';
 
-function BasicExample() {
+function HomeSeriesList() {
   return (
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
@@ -33,4 +33,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default HomeSeriesList;
