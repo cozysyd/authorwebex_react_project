@@ -7,6 +7,7 @@ function ReleaseDate() {
     <div>
       <h1>Release Date Countdown!</h1>
       <CountdownBar />
+      <footer>Follow @AuthorName for more updates!</footer>
     </div>
   );
 }
