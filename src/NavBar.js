@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">WebsiteName</Navbar.Brand>
+        <Navbar.Brand href="#">AuthorWebsite</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -19,8 +19,8 @@ function NavBar() {
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Page 1</Nav.Link>
-            <NavDropdown title="Page 2" id="navbarScrollingDropdown">
+            <Nav.Link href="#action2">About</Nav.Link>
+            <NavDropdown title="Books" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
@@ -31,7 +31,7 @@ function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled>
-              Page 3
+              Latest News
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
