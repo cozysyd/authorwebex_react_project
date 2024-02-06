@@ -13,13 +13,13 @@ function App() {
       case "/Home":
         component = <Home />;
         break;
-      case "/about":
+      case "/About":
         component = <About />;
         break;
-      case "/seriesone":
+      case "/SeriesOne":
         component = <SeriesOne />;
         break;
-      case "/releasedate":
+      case "/ReleaseDate":
         component = <ReleaseDate />;
         break;
     }
