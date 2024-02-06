@@ -8,6 +8,7 @@ import ReleaseDate from './Pages/ReleaseDate';
 
 function App() {
   let component
+    // eslint-disable-next-line default-case
     switch (window.location.pathname) {
       case "/Home":
         component = <Home />;
@@ -20,9 +21,6 @@ function App() {
         break;
       case "/releasedate":
         component = <ReleaseDate />;
-        break;
-      default: 
-        component = <Home />;
         break;
     }
   return (
