@@ -21,10 +21,14 @@ function App() {
       case "/releasedate":
         component = <ReleaseDate />;
         break;
+      default: 
+        component = <Home />;
+        break;
     }
   return (
     <div>
       <NavBar />
+      {component}
     </div> 
   );
 }
