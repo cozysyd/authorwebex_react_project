@@ -3,10 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function SeriesOne() {
     return (
-        <div>
+        <body>
         <h1>Series One</h1>
-        <footer>This is information about the author's first series</footer>
-        </div>
+        <p>This is information about the author's first series</p>
+
+        <footer>&#169; AuthorName 2024</footer>
+        </body>
     );
 }
 

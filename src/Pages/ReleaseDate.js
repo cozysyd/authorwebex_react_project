@@ -4,11 +4,13 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 
 function ReleaseDate() {
   return (
-    <div>
+    <body>
       <h1>Release Date Countdown!</h1>
       <CountdownBar />
-      <footer>Follow @AuthorName for more updates!</footer>
-    </div>
+      <p>Follow @AuthorName for more updates!</p>
+
+      <footer>&#169; AuthorName 2024</footer>
+    </body>
   );
 }
 

@@ -3,10 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function About() {
     return (
-        <div>
+        <body>
         <h1>About</h1>
-        <footer>This is the about page</footer>
-        </div>
+        <p>This is the about page</p>
+
+        <footer>&#169; AuthorName 2024</footer>
+        </body>
     );
 }
 

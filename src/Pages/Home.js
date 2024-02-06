@@ -4,6 +4,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 function Home() {
   return (
+    <body>
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Book Series #1</Accordion.Header>
@@ -30,6 +31,9 @@ function Home() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+
+    <footer>&#169; AuthorName 2024</footer>
+    </body>
   );
 }
 
