@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -30,7 +31,7 @@ function NavBar() {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#">
+            <Nav.Link href="">
               Latest News
             </Nav.Link>
           </Nav>
