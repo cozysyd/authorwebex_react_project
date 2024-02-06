@@ -8,6 +8,8 @@ function App() {
     <div>
       <SeriesList />
 
+      <hr />
+
       <ReleaseDate />
     </div>
   );
